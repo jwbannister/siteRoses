@@ -106,8 +106,8 @@ return(p.rose)
 
 # query of AWS owenslake database
 query_owens <- function(query){
-  usr <- readLines("~/system/credentials/airsci_db_cred.txt")[3]
-  psswrd <- readLines("~/system/credentials/airsci_db_cred.txt")[4]
+  usr <- readLines("./secure_data/airsci_db_cred.txt")[3]
+  psswrd <- readLines("./secure_data/airsci_db_cred.txt")[4]
   hst <- "airdbo1.cwxikzzkese5.us-west-2.rds.amazonaws.com"
   prt <- "5432"
   con <- RPostgreSQL::dbConnect("PostgreSQL", host=hst, port=prt, 

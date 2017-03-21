@@ -1,3 +1,5 @@
 .Rproj.user
 .Rhistory
 .RData
+secure_data/*
+.swp
